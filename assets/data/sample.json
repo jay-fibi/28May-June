@@ -1,0 +1,10 @@
+{
+    "info": "This file lives in a nested directory: assets/data/",
+    "createdBy": "Cline",
+    "purpose": "Demonstrate creating files inside nested folders",
+    "items": [
+        { "id": 1, "name": "Alpha" },
+        { "id": 2, "name": "Beta" },
+        { "id": 3, "name": "Gamma" }
+    ]
+}

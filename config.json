@@ -1,0 +1,19 @@
+{
+    "appName": "Cline Demo",
+    "version": "1.0.0",
+    "description": "A sample configuration file created by Cline",
+    "author": "Jay",
+    "settings": {
+        "theme": "light",
+        "language": "en",
+        "debug": false,
+        "maxRetries": 3,
+        "timeoutMs": 5000
+    },
+    "features": {
+        "enableGreeting": true,
+        "enableClickCounter": true,
+        "enableLogging": true
+    },
+    "supportedLocales": ["en", "es", "fr", "de", "hi"]
+}
