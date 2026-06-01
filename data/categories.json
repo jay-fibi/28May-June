@@ -1,0 +1,48 @@
+{
+  "categories": [
+    {
+      "id": "mens",
+      "name": "Men",
+      "slug": "mens",
+      "image": "https://via.placeholder.com/400x500/2c3e50/ffffff?text=Men",
+      "subcategories": [
+        { "id": "mens-tshirts", "name": "T-Shirts", "slug": "tshirts" },
+        { "id": "mens-shirts", "name": "Shirts", "slug": "shirts" },
+        { "id": "mens-jeans", "name": "Jeans", "slug": "jeans" },
+        { "id": "mens-jackets", "name": "Jackets", "slug": "jackets" }
+      ]
+    },
+    {
+      "id": "womens",
+      "name": "Women",
+      "slug": "womens",
+      "image": "https://via.placeholder.com/400x500/c0392b/ffffff?text=Women",
+      "subcategories": [
+        { "id": "womens-dresses", "name": "Dresses", "slug": "dresses" },
+        { "id": "womens-tops", "name": "Tops", "slug": "tops" },
+        { "id": "womens-jeans", "name": "Jeans", "slug": "jeans" },
+        { "id": "womens-kurtas", "name": "Kurtas", "slug": "kurtas" }
+      ]
+    },
+    {
+      "id": "kids",
+      "name": "Kids",
+      "slug": "kids",
+      "image": "https://via.placeholder.com/400x500/27ae60/ffffff?text=Kids",
+      "subcategories": [
+        { "id": "kids-tshirts", "name": "T-Shirts", "slug": "tshirts" },
+        { "id": "kids-shorts", "name": "Shorts", "slug": "shorts" }
+      ]
+    },
+    {
+      "id": "accessories",
+      "name": "Accessories",
+      "slug": "accessories",
+      "image": "https://via.placeholder.com/400x500/8e44ad/ffffff?text=Accessories",
+      "subcategories": [
+        { "id": "accessories-caps", "name": "Caps", "slug": "caps" },
+        { "id": "accessories-belts", "name": "Belts", "slug": "belts" }
+      ]
+    }
+  ]
+}

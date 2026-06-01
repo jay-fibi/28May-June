@@ -1,2 +1,5 @@
 __pycache__/
 *.class
+
+.idea/
+.DS_Store

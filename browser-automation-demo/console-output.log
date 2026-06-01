@@ -1,0 +1,8 @@
+[2026-05-29T16:07:02.071Z] [log] page loaded at 2026-05-29T16:07:02.068Z
+[2026-05-29T16:07:02.071Z] [info] info: ready to receive clicks
+[2026-05-29T16:07:03.040Z] [log] button clicked
+[2026-05-29T16:07:03.040Z] [warning] warn: something noteworthy happened
+[2026-05-29T16:07:03.040Z] [error] error: this is a simulated error
+[2026-05-29T16:07:03.040Z] [table] [Object, Object]
+[2026-05-29T16:07:03.052Z] [log] evaluate() injected log from automation script
+[2026-05-29T16:07:03.052Z] [info] evaluate() page title is: Console + Screenshot Demo

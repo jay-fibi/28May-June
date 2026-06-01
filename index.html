@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cline Demo Page</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <!-- Link to CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main class="container">
-        <h1>Cline File Creation Demo</h1>
-        <p id="greeting">Loading greeting...</p>
-        <button id="clickBtn" type="button">Click me</button>
-    </main>
+    <div class="container">
+        <h1>Welcome to My Project</h1>
+        <p>This is a sample HTML page that references both a JavaScript file and a CSS stylesheet.</p>
+
+        <label for="nameInput">Enter your name:</label>
+        <input type="text" id="nameInput" placeholder="Type your name here...">
+
+        <button id="greetBtn">Greet Me</button>
+
+        <div id="greeting"></div>
+
+        <footer>
+            <p>&copy; 2026 My Project. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Link to JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>

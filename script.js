@@ -1,34 +1,24 @@
 // script.js - Basic JavaScript file
-// Created as part of the file creation exercise
+console.log("Hello from script.js!");
 
-// Greet the user on page load
-document.addEventListener('DOMContentLoaded', function () {
-    console.log('Hello! The page has loaded successfully.');
-    greetUser('Jay');
-    setupButton();
+// A simple greeting function
+function greet(name) {
+    return `Hello, ${name}! Welcome to the project.`;
+}
+
+// Function to update the greeting on the page
+function displayGreeting() {
+    const nameInput = document.getElementById("nameInput");
+    const greetingDisplay = document.getElementById("greeting");
+    const name = nameInput.value.trim() || "Guest";
+    greetingDisplay.textContent = greet(name);
+}
+
+// Add event listener when DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("DOM fully loaded and parsed.");
+    const greetBtn = document.getElementById("greetBtn");
+    if (greetBtn) {
+        greetBtn.addEventListener("click", displayGreeting);
+    }
 });
-
-/**
- * Display a greeting message on the page.
- * @param {string} name - The name of the user to greet.
- */
-function greetUser(name) {
-    const greetingEl = document.getElementById('greeting');
-    if (greetingEl) {
-        greetingEl.textContent = `Hello, ${name}! Welcome to the demo page.`;
-    }
-}
-
-/**
- * Wire up the click handler for the demo button.
- */
-function setupButton() {
-    const btn = document.getElementById('clickBtn');
-    let count = 0;
-    if (btn) {
-        btn.addEventListener('click', () => {
-            count += 1;
-            btn.textContent = `Clicked ${count} time${count === 1 ? '' : 's'}`;
-        });
-    }
-}
