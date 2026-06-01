@@ -1,0 +1,5 @@
+Sample File 1
+=============
+This is sample file number 1.
+Created on branch: sample-1
+Content: A simple text file demonstrating branch-per-file workflow.
