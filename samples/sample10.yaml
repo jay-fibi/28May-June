@@ -1,0 +1,8 @@
+# Sample File 10 - created on branch sample-10
+name: sample10
+branch: sample-10
+description: Sample YAML file number 10
+items:
+  - first
+  - second
+  - third
