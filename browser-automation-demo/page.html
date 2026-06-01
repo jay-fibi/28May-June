@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Console + Screenshot Demo</title>
+    <style>
+      body {
+        font-family: -apple-system, system-ui, sans-serif;
+        background: #f5f7fb;
+        color: #1f2937;
+        margin: 0;
+        padding: 40px;
+      }
+      .card {
+        max-width: 640px;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 12px;
+        padding: 32px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      }
+      h1 { margin-top: 0; color: #2563eb; }
+      button {
+        background: #2563eb;
+        color: white;
+        border: 0;
+        padding: 12px 18px;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      button:hover { background: #1d4ed8; }
+      #status {
+        margin-top: 20px;
+        padding: 12px;
+        background: #eef2ff;
+        border-radius: 8px;
+        font-family: ui-monospace, monospace;
+      }
+      body.changed { background: #ecfdf5; }
+      body.changed .card { border: 2px solid #10b981; }
+      body.changed h1 { color: #047857; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1 id="title">Initial State</h1>
+      <p id="desc">Click the button to trigger console logs and a visual change.</p>
+      <button id="trigger">Trigger logs</button>
+      <div id="status">status: idle</div>
+    </div>
+
+    <script>
+      // Logs that fire on page load
+      console.log("page loaded at", new Date().toISOString());
+      console.info("info: ready to receive clicks");
+
+      document.getElementById("trigger").addEventListener("click", () => {
+        console.log("button clicked");
+        console.warn("warn: something noteworthy happened");
+        console.error("error: this is a simulated error");
+        console.table([
+          { id: 1, name: "alpha" },
+          { id: 2, name: "beta" },
+        ]);
+
+        document.body.classList.add("changed");
+        document.getElementById("title").textContent = "Updated State ✅";
+        document.getElementById("desc").textContent =
+          "The page has been mutated by JavaScript.";
+        document.getElementById("status").textContent =
+          "status: triggered at " + new Date().toLocaleTimeString();
+      });
+    </script>
+  </body>
+</html>

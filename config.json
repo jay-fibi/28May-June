@@ -1,19 +1,15 @@
 {
-    "appName": "Cline Demo",
+    "appName": "My Project",
     "version": "1.0.0",
-    "description": "A sample configuration file created by Cline",
-    "author": "Jay",
+    "description": "A sample project demonstrating file creation with Cline.",
+    "author": "Jay Gohil",
     "settings": {
         "theme": "light",
         "language": "en",
-        "debug": false,
-        "maxRetries": 3,
-        "timeoutMs": 5000
+        "debugMode": false
     },
-    "features": {
-        "enableGreeting": true,
-        "enableClickCounter": true,
-        "enableLogging": true
-    },
-    "supportedLocales": ["en", "es", "fr", "de", "hi"]
+    "endpoints": {
+        "api": "https://api.example.com/v1",
+        "docs": "https://docs.example.com"
+    }
 }

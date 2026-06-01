@@ -1,91 +1,63 @@
-// login.js - Client-side behavior for the simple login screen
+// login.js - Client-side handling for the login page
+console.log("Hello from login.js!");
 
-document.addEventListener('DOMContentLoaded', function () {
-    console.log('Login page loaded successfully.');
-    setupLoginForm();
-});
+// Validate the form fields. Returns an array of error messages.
+function validateLogin(username, password) {
+    const errors = [];
 
-/**
- * Wire up the login form submit handler.
- */
-function setupLoginForm() {
-    const form = document.getElementById('loginForm');
-    const emailInput = document.getElementById('email');
-    const passwordInput = document.getElementById('password');
-    const rememberMeInput = document.getElementById('rememberMe');
-
-    if (!form || !emailInput || !passwordInput || !rememberMeInput) {
-        return;
-    }
-
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
-
-        const email = emailInput.value.trim();
-        const password = passwordInput.value;
-        const rememberMe = rememberMeInput.checked;
-
-        const validationError = validateLoginForm(email, password);
-
-        if (validationError) {
-            showLoginMessage(validationError, 'error');
-            return;
-        }
-
-        // Demo only: no real authentication is performed because there is no backend.
-        console.log('Demo login submitted:', { email, rememberMe });
-        showLoginMessage('Login successful! This is a front-end demo.', 'success');
-        form.reset();
-    });
-}
-
-/**
- * Validate the login form values.
- * @param {string} email - User email address.
- * @param {string} password - User password.
- * @returns {string} An error message, or an empty string when valid.
- */
-function validateLoginForm(email, password) {
-    if (!email) {
-        return 'Please enter your email address.';
-    }
-
-    if (!isValidEmail(email)) {
-        return 'Please enter a valid email address.';
+    if (!username) {
+        errors.push("Username or email is required.");
     }
 
     if (!password) {
-        return 'Please enter your password.';
+        errors.push("Password is required.");
+    } else if (password.length < 6) {
+        errors.push("Password must be at least 6 characters long.");
     }
 
-    if (password.length < 6) {
-        return 'Password must be at least 6 characters long.';
-    }
-
-    return '';
+    return errors;
 }
 
-/**
- * Check if an email value has a basic valid format.
- * @param {string} email - Email value to check.
- * @returns {boolean} Whether the email format is valid.
- */
-function isValidEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+// Show a message to the user (type can be "error" or "success").
+function showMessage(text, type) {
+    const message = document.getElementById("message");
+    message.textContent = text;
+    message.className = "message " + type;
 }
 
-/**
- * Show a login status message on the page.
- * @param {string} message - Message to display.
- * @param {'error' | 'success'} type - Message type.
- */
-function showLoginMessage(message, type) {
-    const messageEl = document.getElementById('loginMessage');
+// Handle the login form submission.
+function handleLogin(event) {
+    event.preventDefault();
 
-    if (!messageEl) {
+    const usernameInput = document.getElementById("username");
+    const passwordInput = document.getElementById("password");
+
+    const username = usernameInput.value.trim();
+    const password = passwordInput.value;
+
+    // Reset previous invalid states
+    usernameInput.classList.remove("invalid");
+    passwordInput.classList.remove("invalid");
+
+    const errors = validateLogin(username, password);
+
+    if (errors.length > 0) {
+        if (!username) usernameInput.classList.add("invalid");
+        if (!password || password.length < 6) passwordInput.classList.add("invalid");
+        showMessage(errors[0], "error");
         return;
     }
 
-    messageEl.textContent = message;
-    messageEl.className = `login-message ${type}`;
+    // NOTE: This is a front-end demo only. Replace this block with a real
+    // request to your backend authentication endpoint.
+    showMessage(`Welcome, ${username}! Login successful (demo).`, "success");
 }
+
+// Wire up the form once the DOM is ready.
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("DOM fully loaded and parsed.");
+    const loginForm = document.getElementById("loginForm");
+    if (loginForm) {
+        loginForm.addEventListener("submit", handleLogin);
+    }
+});

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Interactive Elements Demo</title>
+    <style>
+      body {
+        font-family: -apple-system, system-ui, sans-serif;
+        background: #f5f7fb;
+        color: #1f2937;
+        margin: 0;
+        padding: 40px;
+      }
+      .card {
+        max-width: 640px;
+        margin: 0 auto 24px;
+        background: #fff;
+        border-radius: 12px;
+        padding: 32px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      }
+      h1 { margin-top: 0; color: #2563eb; }
+      button {
+        background: #2563eb;
+        color: white;
+        border: 0;
+        padding: 12px 18px;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      button:hover { background: #1d4ed8; }
+      label { display: block; margin: 16px 0 6px; font-weight: 600; }
+      input[type="text"], input[type="email"] {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 12px;
+        font-size: 15px;
+        border: 1px solid #cbd5e1;
+        border-radius: 8px;
+      }
+      .status {
+        margin-top: 20px;
+        padding: 12px;
+        background: #eef2ff;
+        border-radius: 8px;
+        font-family: ui-monospace, monospace;
+      }
+      .clicked-badge { color: #047857; }
+      /* A tall spacer so the page is scrollable */
+      .spacer {
+        height: 1200px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        color: #94a3b8;
+      }
+      #scroll-target {
+        padding: 24px;
+        text-align: center;
+        background: #ecfdf5;
+        border: 2px dashed #10b981;
+        border-radius: 12px;
+        max-width: 640px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1 id="title">Interactive Elements</h1>
+      <p id="desc">Use the controls below to test clicking, typing, and submitting.</p>
+
+      <!-- 1. A clickable button -->
+      <button id="action-btn">Click Me</button>
+      <div id="click-status" class="status">click status: idle</div>
+
+      <!-- 2 & 3. A form with text input fields to submit -->
+      <form id="signup-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" />
+
+        <button type="submit" id="submit-btn">Submit</button>
+      </form>
+      <div id="form-status" class="status">form status: not submitted</div>
+    </div>
+
+    <!-- 4. Tall area to enable scrolling -->
+    <div class="spacer">↓ scroll down to reach the target ↓</div>
+    <div id="scroll-target">🎯 Scroll target reached!</div>
+
+    <script>
+      console.log("interactive page loaded at", new Date().toISOString());
+
+      // Button click handler
+      document.getElementById("action-btn").addEventListener("click", () => {
+        console.log("action button clicked");
+        document.getElementById("click-status").innerHTML =
+          '<span class="clicked-badge">click status: button clicked ✅</span>';
+      });
+
+      // Form submit handler (prevent real navigation so we can inspect state)
+      document.getElementById("signup-form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        console.log("form submitted with", { name, email });
+        document.getElementById("form-status").textContent =
+          `form status: submitted (name="${name}", email="${email}")`;
+        document.body.classList.add("form-submitted");
+      });
+    </script>
+  </body>
+</html>

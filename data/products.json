@@ -1,0 +1,370 @@
+{
+  "products": [
+    {
+      "id": "p001",
+      "name": "Classic White Crew T-Shirt",
+      "gender": "men",
+      "category": "mens",
+      "subcategory": "tshirts",
+      "brand": "Urban",
+      "price": 599,
+      "originalPrice": 899,
+      "images": [
+        "https://via.placeholder.com/600x750/ecf0f1/2c3e50?text=White+Tee+1",
+        "https://via.placeholder.com/600x750/dfe6e9/2c3e50?text=White+Tee+2"
+      ],
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["white", "black", "grey"],
+      "stock": 50,
+      "rating": 4.5,
+      "reviews": 120,
+      "tags": ["new", "bestseller"],
+      "description": "A timeless 100% cotton crew-neck t-shirt with a regular fit. Soft, breathable, and perfect for everyday wear."
+    },
+    {
+      "id": "p002",
+      "name": "Slim Fit Casual Shirt",
+      "gender": "men",
+      "category": "mens",
+      "subcategory": "shirts",
+      "brand": "Metro",
+      "price": 1299,
+      "originalPrice": 1999,
+      "images": [
+        "https://via.placeholder.com/600x750/3498db/ffffff?text=Casual+Shirt+1",
+        "https://via.placeholder.com/600x750/2980b9/ffffff?text=Casual+Shirt+2"
+      ],
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "colors": ["blue", "white", "navy"],
+      "stock": 35,
+      "rating": 4.2,
+      "reviews": 64,
+      "tags": ["new"],
+      "description": "A versatile slim-fit cotton shirt with a button-down collar. Dress it up or down for any occasion."
+    },
+    {
+      "id": "p003",
+      "name": "Slim Tapered Denim Jeans",
+      "gender": "men",
+      "category": "mens",
+      "subcategory": "jeans",
+      "brand": "DenimCo",
+      "price": 1799,
+      "originalPrice": 2499,
+      "images": [
+        "https://via.placeholder.com/600x750/34495e/ffffff?text=Jeans+1",
+        "https://via.placeholder.com/600x750/2c3e50/ffffff?text=Jeans+2"
+      ],
+      "sizes": ["30", "32", "34", "36", "38"],
+      "colors": ["blue", "black"],
+      "stock": 40,
+      "rating": 4.6,
+      "reviews": 200,
+      "tags": ["bestseller"],
+      "description": "Stretchable slim tapered jeans with a mid-rise waist. Comfortable all-day fit with durable denim."
+    },
+    {
+      "id": "p004",
+      "name": "Bomber Jacket",
+      "gender": "men",
+      "category": "mens",
+      "subcategory": "jackets",
+      "brand": "Aviator",
+      "price": 2999,
+      "originalPrice": 4499,
+      "images": [
+        "https://via.placeholder.com/600x750/1e272e/ffffff?text=Bomber+1",
+        "https://via.placeholder.com/600x750/2f3640/ffffff?text=Bomber+2"
+      ],
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["black", "olive", "navy"],
+      "stock": 20,
+      "rating": 4.7,
+      "reviews": 88,
+      "tags": ["new", "premium"],
+      "description": "A stylish bomber jacket with ribbed cuffs and a smooth zip closure. Lightweight yet warm."
+    },
+    {
+      "id": "p005",
+      "name": "Graphic Print T-Shirt",
+      "gender": "men",
+      "category": "mens",
+      "subcategory": "tshirts",
+      "brand": "Urban",
+      "price": 699,
+      "originalPrice": 999,
+      "images": [
+        "https://via.placeholder.com/600x750/e17055/ffffff?text=Graphic+Tee"
+      ],
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["maroon", "black", "white"],
+      "stock": 60,
+      "rating": 4.1,
+      "reviews": 45,
+      "tags": ["new"],
+      "description": "Bold graphic-print cotton t-shirt for a casual streetwear look."
+    },
+    {
+      "id": "p006",
+      "name": "Floral Summer Dress",
+      "gender": "women",
+      "category": "womens",
+      "subcategory": "dresses",
+      "brand": "Bloom",
+      "price": 1599,
+      "originalPrice": 2299,
+      "images": [
+        "https://via.placeholder.com/600x750/fd79a8/ffffff?text=Floral+Dress+1",
+        "https://via.placeholder.com/600x750/e84393/ffffff?text=Floral+Dress+2"
+      ],
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "colors": ["pink", "yellow", "blue"],
+      "stock": 30,
+      "rating": 4.8,
+      "reviews": 150,
+      "tags": ["new", "bestseller"],
+      "description": "A breezy floral-print summer dress with a flattering A-line silhouette. Perfect for sunny days."
+    },
+    {
+      "id": "p007",
+      "name": "Ruffle Sleeve Top",
+      "gender": "women",
+      "category": "womens",
+      "subcategory": "tops",
+      "brand": "Bloom",
+      "price": 899,
+      "originalPrice": 1299,
+      "images": [
+        "https://via.placeholder.com/600x750/a29bfe/ffffff?text=Ruffle+Top"
+      ],
+      "sizes": ["XS", "S", "M", "L"],
+      "colors": ["white", "lavender", "peach"],
+      "stock": 45,
+      "rating": 4.3,
+      "reviews": 72,
+      "tags": ["new"],
+      "description": "An elegant ruffle-sleeve top crafted from soft, flowy fabric. Pairs well with jeans or skirts."
+    },
+    {
+      "id": "p008",
+      "name": "High-Waist Skinny Jeans",
+      "gender": "women",
+      "category": "womens",
+      "subcategory": "jeans",
+      "brand": "DenimCo",
+      "price": 1699,
+      "originalPrice": 2399,
+      "images": [
+        "https://via.placeholder.com/600x750/636e72/ffffff?text=Skinny+Jeans"
+      ],
+      "sizes": ["26", "28", "30", "32", "34"],
+      "colors": ["blue", "black", "grey"],
+      "stock": 38,
+      "rating": 4.5,
+      "reviews": 110,
+      "tags": ["bestseller"],
+      "description": "Figure-flattering high-waist skinny jeans with stretch denim for all-day comfort."
+    },
+    {
+      "id": "p009",
+      "name": "Embroidered Cotton Kurta",
+      "gender": "women",
+      "category": "womens",
+      "subcategory": "kurtas",
+      "brand": "Ethnix",
+      "price": 1199,
+      "originalPrice": 1799,
+      "images": [
+        "https://via.placeholder.com/600x750/00b894/ffffff?text=Kurta+1",
+        "https://via.placeholder.com/600x750/00cec9/ffffff?text=Kurta+2"
+      ],
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "colors": ["teal", "maroon", "mustard"],
+      "stock": 25,
+      "rating": 4.6,
+      "reviews": 90,
+      "tags": ["new", "ethnic"],
+      "description": "A hand-embroidered straight-cut cotton kurta. Comfortable and elegant for festive or daily wear."
+    },
+    {
+      "id": "p010",
+      "name": "Off-Shoulder Maxi Dress",
+      "gender": "women",
+      "category": "womens",
+      "subcategory": "dresses",
+      "brand": "Bloom",
+      "price": 1999,
+      "originalPrice": 2999,
+      "images": [
+        "https://via.placeholder.com/600x750/e84393/ffffff?text=Maxi+Dress"
+      ],
+      "sizes": ["XS", "S", "M", "L"],
+      "colors": ["red", "black", "emerald"],
+      "stock": 18,
+      "rating": 4.7,
+      "reviews": 64,
+      "tags": ["premium"],
+      "description": "A flowing off-shoulder maxi dress that makes a statement at any evening event."
+    },
+    {
+      "id": "p011",
+      "name": "Kids Cartoon Print T-Shirt",
+      "gender": "kids",
+      "category": "kids",
+      "subcategory": "tshirts",
+      "brand": "TinyTots",
+      "price": 399,
+      "originalPrice": 599,
+      "images": [
+        "https://via.placeholder.com/600x750/fdcb6e/2c3e50?text=Kids+Tee"
+      ],
+      "sizes": ["2-3Y", "4-5Y", "6-7Y", "8-9Y"],
+      "colors": ["yellow", "blue", "red"],
+      "stock": 70,
+      "rating": 4.4,
+      "reviews": 55,
+      "tags": ["new"],
+      "description": "Fun cartoon-print cotton t-shirt for kids. Soft, skin-friendly, and machine washable."
+    },
+    {
+      "id": "p012",
+      "name": "Kids Denim Shorts",
+      "gender": "kids",
+      "category": "kids",
+      "subcategory": "shorts",
+      "brand": "TinyTots",
+      "price": 499,
+      "originalPrice": 799,
+      "images": [
+        "https://via.placeholder.com/600x750/74b9ff/ffffff?text=Kids+Shorts"
+      ],
+      "sizes": ["2-3Y", "4-5Y", "6-7Y", "8-9Y"],
+      "colors": ["blue", "grey"],
+      "stock": 50,
+      "rating": 4.2,
+      "reviews": 30,
+      "tags": [],
+      "description": "Durable denim shorts with an elastic waistband for easy movement and play."
+    },
+    {
+      "id": "p013",
+      "name": "Classic Baseball Cap",
+      "gender": "unisex",
+      "category": "accessories",
+      "subcategory": "caps",
+      "brand": "HeadGear",
+      "price": 499,
+      "originalPrice": 799,
+      "images": [
+        "https://via.placeholder.com/600x750/0984e3/ffffff?text=Cap"
+      ],
+      "sizes": ["Free Size"],
+      "colors": ["black", "navy", "beige"],
+      "stock": 80,
+      "rating": 4.3,
+      "reviews": 95,
+      "tags": ["bestseller"],
+      "description": "An adjustable cotton baseball cap with a curved brim. One size fits all."
+    },
+    {
+      "id": "p014",
+      "name": "Genuine Leather Belt",
+      "gender": "men",
+      "category": "accessories",
+      "subcategory": "belts",
+      "brand": "Craft",
+      "price": 899,
+      "originalPrice": 1399,
+      "images": [
+        "https://via.placeholder.com/600x750/6d4c41/ffffff?text=Leather+Belt"
+      ],
+      "sizes": ["32", "34", "36", "38", "40"],
+      "colors": ["brown", "black"],
+      "stock": 42,
+      "rating": 4.6,
+      "reviews": 78,
+      "tags": ["premium"],
+      "description": "A premium genuine-leather belt with a polished metal buckle. Timeless and durable."
+    },
+    {
+      "id": "p015",
+      "name": "Oversized Hoodie",
+      "gender": "men",
+      "category": "mens",
+      "subcategory": "jackets",
+      "brand": "Urban",
+      "price": 1499,
+      "originalPrice": 2199,
+      "images": [
+        "https://via.placeholder.com/600x750/2d3436/ffffff?text=Hoodie"
+      ],
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "colors": ["grey", "black", "olive"],
+      "stock": 33,
+      "rating": 4.5,
+      "reviews": 140,
+      "tags": ["new", "bestseller"],
+      "description": "A cozy oversized fleece hoodie with a kangaroo pocket and adjustable drawstring hood."
+    },
+    {
+      "id": "p016",
+      "name": "Striped Polo T-Shirt",
+      "gender": "men",
+      "category": "mens",
+      "subcategory": "tshirts",
+      "brand": "Metro",
+      "price": 799,
+      "originalPrice": 1199,
+      "images": [
+        "https://via.placeholder.com/600x750/00b894/ffffff?text=Polo+Tee"
+      ],
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["green", "navy", "white"],
+      "stock": 48,
+      "rating": 4.2,
+      "reviews": 52,
+      "tags": [],
+      "description": "A smart-casual striped polo t-shirt with a ribbed collar and breathable pique fabric."
+    },
+    {
+      "id": "p017",
+      "name": "Pleated Midi Skirt",
+      "gender": "women",
+      "category": "womens",
+      "subcategory": "tops",
+      "brand": "Bloom",
+      "price": 1099,
+      "originalPrice": 1599,
+      "images": [
+        "https://via.placeholder.com/600x750/fab1a0/2c3e50?text=Midi+Skirt"
+      ],
+      "sizes": ["XS", "S", "M", "L"],
+      "colors": ["beige", "black", "rust"],
+      "stock": 27,
+      "rating": 4.4,
+      "reviews": 41,
+      "tags": ["new"],
+      "description": "An elegant pleated midi skirt with an elastic waist. Flows beautifully with every step."
+    },
+    {
+      "id": "p018",
+      "name": "Knitted Beanie",
+      "gender": "unisex",
+      "category": "accessories",
+      "subcategory": "caps",
+      "brand": "HeadGear",
+      "price": 399,
+      "originalPrice": 699,
+      "images": [
+        "https://via.placeholder.com/600x750/636e72/ffffff?text=Beanie"
+      ],
+      "sizes": ["Free Size"],
+      "colors": ["grey", "black", "mustard"],
+      "stock": 65,
+      "rating": 4.5,
+      "reviews": 60,
+      "tags": ["new"],
+      "description": "A warm ribbed-knit beanie to keep you cozy in cold weather. Soft and stretchy."
+    }
+  ]
+}

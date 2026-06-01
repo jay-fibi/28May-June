@@ -1,0 +1,20 @@
+{
+  "appName": "Demo Application",
+  "version": "1.0.0",
+  "description": "A sample configuration file",
+  "settings": {
+    "theme": "light",
+    "language": "en",
+    "debug": false,
+    "maxItems": 50
+  },
+  "features": {
+    "notifications": true,
+    "autoSave": true,
+    "darkMode": false
+  },
+  "author": {
+    "name": "Your Name",
+    "email": "you@example.com"
+  }
+}
